@@ -1,11 +1,11 @@
 variable "location" {
   description = "The resource group location"
-  default     = "West Europe"
+  default     = "southeastasia"
 }
 
 variable "vnet_resource_group_name" {
   description = "The resource group name to be created"
-  default     = "networks"
+  default     = "fwnetworks"
 }
 
 variable "hub_vnet_name" {
@@ -25,7 +25,7 @@ variable "kube_version_prefix" {
 
 variable "kube_resource_group_name" {
   description = "The resource group name to be created"
-  default     = "nopublicipaks"
+  default     = "aksprivatecluster"
 }
 
 variable "nodepool_nodes_count" {
@@ -45,10 +45,10 @@ variable "network_docker_bridge_cidr" {
 
 variable "network_dns_service_ip" {
   description = "CNI DNS service IP"
-  default     = "10.2.0.10"
+  default     = "192.2.0.10"
 }
 
 variable "network_service_cidr" {
   description = "CNI service cidr"
-  default     = "10.2.0.0/24"
+  default     = "192.2.0.0/24"
 }
